@@ -1,4 +1,10 @@
 <?php
+/*
+	author: Benito Alfredo Reyes Hdz
+	date:   06/12/2016
+	git:	https://github.com/Alfredit0/
+ */
+ 
 $num_campos=8;
 $campos=array("ID", "Nombre", "ApellidoPaterno", "ApellidoMaterno", "FechaNacimiento", "DepartamentoEmpresa", "FechaAdscripcion","Salario");
 $nombCampos=array("ID", "Nombre", "Apellido Paterno", "Apellido Materno", "Fecha Nacimiento", "Departamento Empresa", "Fecha Adscripcion","Salario");

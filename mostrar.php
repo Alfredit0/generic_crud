@@ -1,4 +1,10 @@
 <?php
+/*
+	author: Benito Alfredo Reyes Hdz
+	date:   06/12/2016
+	git:	https://github.com/Alfredit0/
+ */
+ 
 require 'parametros.php';
 ?>
 
