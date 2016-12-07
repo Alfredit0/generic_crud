@@ -1,8 +1,6 @@
 <?php
 		require 'parametros.php';
-		//Conexión a la BD
-		$link = mysqli_connect('localhost', 'root', 'root','crud')
-		    or die('No se pudo conectar: ' . mysql_error());		
+		//Conexión a la BD		
 
 		$sql = "INSERT INTO ".$tabla." (";
 		
