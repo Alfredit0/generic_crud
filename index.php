@@ -33,6 +33,7 @@ require 'parametros.php';
 </head>
 <body>	
 		<h2>Registros</h2>
+		<h2><a href="alta.php">Dar de alta</a></h2>
 		<table>
 		<?php
 		echo "<tr>";

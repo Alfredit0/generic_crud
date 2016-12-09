@@ -25,4 +25,6 @@ require 'parametros.php';
 			echo "¡Gracias! Hemos recibido sus cambios.\n";	
 		else
 			echo "Error. No se guardo el registro";
+
+	echo '<h2><a href="index.php">Ir a inicio</a></h2>';
 ?>

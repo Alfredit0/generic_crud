@@ -5,12 +5,12 @@
 	git:	https://github.com/Alfredit0/
  */
  
-$num_campos=8;
-$campos=array("ID", "Nombre", "ApellidoPaterno", "ApellidoMaterno", "FechaNacimiento", "DepartamentoEmpresa", "FechaAdscripcion","Salario");
-$nombCampos=array("ID", "Nombre", "Apellido Paterno", "Apellido Materno", "Fecha Nacimiento", "Departamento Empresa", "Fecha Adscripcion","Salario");
-$tabla="trabajadores";
+$num_campos=4;
+$campos=array("ID", "Nombre", "ApellidoPaterno", "ApellidoMaterno");
+$nombCampos=array("ID", "Nombre", "Apellido Paterno", "Apellido Materno");
+$tabla="prueba";
 
-$link = mysqli_connect('localhost', 'root', 'root','crud')
+$link = mysqli_connect('localhost', 'root', '','prueba')
         or die('No se pudo conectar: ' . mysql_error());
 
 if (!$link->set_charset("utf8")) {

@@ -18,7 +18,7 @@ require 'parametros.php';
 		<form action="insertar.php" method="post">
 			<?php
 			for ($i=0; $i < $num_campos; $i++) { 
-				echo '<label>'.$nombCampos[$i].'</label><input name="parametro'.$i.'" placeholder="'.$nombCampos[$i].'">';
+				echo '<label>'.$nombCampos[$i].'</label><input name="parametro'.$i.'" placeholder="'.$nombCampos[$i].'" required="">';
 				echo "<br>\n";
 			}
 			?>

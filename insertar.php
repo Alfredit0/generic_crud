@@ -34,4 +34,7 @@
 			echo "¡Gracias! Hemos recibido sus datos.\n";	
 		else
 			echo "No se guardo el registro";
+
+		echo '<h2><a href="index.php">Ir a inicio</a></h2>';
+
 		?>
