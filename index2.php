@@ -43,7 +43,7 @@
     </script>    
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">		        
             <div class="col-md-12">
             <h4>Contactos</h4>
@@ -52,10 +52,12 @@
         <thead>
             <tr>
                 <?php
-                		for ($i=0; $i < $num_campos; $i++) { 
-			echo '<th>'.$nombCampos[$i].'</th>';
-			}
+                	for ($i=0; $i < $num_campos; $i++) { 
+                        echo '<th>'.$nombCampos[$i].'</th>';
+                    }
                 ?>
+                <th>EDITAR</th>
+                <th>ELIMINAR</th>
             </tr>
         </thead>
         <tbody>
@@ -69,6 +71,8 @@
                 for ($i=0; $i < $num_campos; $i++) { 
                     echo '<td>'.$row [$campos[$i]].'</td>';
                 }
+                echo '<td><button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></td>';
+                echo '<td><button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button></td>';
                 echo "</tr>\n";
                 $j++;
                 }
