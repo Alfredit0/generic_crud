@@ -5,12 +5,12 @@
 	git:	https://github.com/Alfredit0/
  */
  
-$num_campos=4;
-$campos=array("ID", "Nombre", "ApellidoPaterno", "ApellidoMaterno");
-$nombCampos=array("ID", "Nombre", "Apellido Paterno", "Apellido Materno");
-$tabla="prueba";
+$num_campos=9;
+$campos=array("pais", "institucion","facultad","cargo","sexo", "nombre", "email", "tipoplantilla", "estatus", "fechaenvio");
+$nombCampos=array("PAIS", "INSTITUCION", "FACULTAD", "CARGO", "SEXO", "NOMBRE COMPLETO", "EMAIL", "PLANTILLA-E", "ESTADO", "FECHA REGISTRO/ENVÍO");
+$tabla="contactos1";
 
-$link = mysqli_connect('localhost', 'root', '','prueba')
+$link = mysqli_connect('revista.unsis.edu.mx', 'adminrev', 'mysql2018','promocion_db')
         or die('No se pudo conectar: ' . mysql_error());
 
 if (!$link->set_charset("utf8")) {
