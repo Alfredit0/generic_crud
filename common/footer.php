@@ -1,0 +1,36 @@
+<link href="common/footer_style.css" rel="stylesheet">
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <h3 class="footertext">Acerca de:</h3>
+            <br>
+              <div class="col-md-4">
+                <center>
+                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                  <br>
+                  <h4 class="footertext">Programador</h4>
+                  <p class="footertext">Benito Alfredo Reyes<br>
+                </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                  <br>
+                  <h4 class="footertext">Versión del software</h4>
+                  <p class="footertext">1.0<br>
+                </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                  <br>
+                  <h4 class="footertext">Diseñado para</h4>
+                  <p class="footertext">Revista Salud y Administración.<br>
+                </center>
+              </div>
+            </div>
+            <div class="row">
+            <p><center><a href="#">Contact Stuff Here</a> <p class="footertext">Copyright 2018</p></center></p>
+        </div>
+    </div>
+</div>

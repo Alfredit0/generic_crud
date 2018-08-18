@@ -18,9 +18,9 @@ require 'parametros.php';
 					$sql=$sql.",";
 				}
 				$i++;
-		}
+		}		
 		$sql=$sql." WHERE ".$campos[0]." = '".$id."'";		
-
+		echo $sql;	
 	if(mysqli_query($link,$sql))
 			echo "¡Gracias! Hemos recibido sus cambios.\n";	
 		else

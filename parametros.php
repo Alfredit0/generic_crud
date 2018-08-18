@@ -5,9 +5,9 @@
 	git:	https://github.com/Alfredit0/
  */
  
-$num_campos=9;
+$num_campos=10;
 $campos=array("pais", "institucion","facultad","cargo","sexo", "nombre", "email", "tipoplantilla", "estatus", "fechaenvio");
-$nombCampos=array("PAIS", "INSTITUCION", "FACULTAD", "CARGO", "SEXO", "NOMBRE COMPLETO", "EMAIL", "PLANTILLA-E", "ESTADO", "FECHA REGISTRO/ENVÍO");
+$nombCampos=array("PAIS", "INSTITUCION", "FACULTAD", "CARGO", "SEXO", "NOMBRE", "EMAIL", "NE", "ESTADO", "REGISTRO/ENVÍO");
 $tabla="contactos1";
 
 $link = mysqli_connect('revista.unsis.edu.mx', 'adminrev', 'mysql2018','promocion_db')

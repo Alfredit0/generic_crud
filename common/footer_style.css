@@ -1,0 +1,28 @@
+/* Footer styles
+-------------------------------------------------- */
+#footer {  
+    display: inline-block;
+    width: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+  /* Set the fixed height of the footer here */
+  height: 280px;
+  background: 
+  /* color overlay */ 
+    linear-gradient(
+      rgba(33, 37, 41), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* image to overlay */
+    url(../images/footer.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+/* Custom footer CSS
+-------------------------------------------------- */
+.footertext {
+  color: #ffffff;
+}
