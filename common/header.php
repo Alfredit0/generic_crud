@@ -7,15 +7,13 @@
         <div class="row">
           <!-- social icon-->
           <div class="col-sm-12">
+            <p style="padding-top: 0.8em; font-size: 1.2em;">Sistema de Envío de Correos Electrónicos (SECE)</p>
             <ul class="social-network">
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
-              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="index.php"><i class="fa fa-home"></i>Inicio</a></li>
+              <li><a class="waves-effect waves-dark" href="contactos.php"><i class="fa fa-users"></i>Contactos</a></li>
+              <li><a class="waves-effect waves-dark" href="variables.php"><i class="fa fa-linkedin"></i>Variables</a></li>
             </ul>
           </div>
-
         </div>
       </div>
   </header>

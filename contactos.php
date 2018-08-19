@@ -20,6 +20,7 @@ include 'common/head.php';
         <div class="row">		        
             <div class="col-md-12">
             <h3>Contactos</h3>
+            <h4 ><a href="alta.php" class="text-primary"><span class="glyphicon glyphicon-plus"></span> Dar de alta un contacto</a></h4>           
             <div class="table-responsive">                
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
@@ -68,6 +69,8 @@ include 'common/head.php';
             </div>
         </div>
     </div>
+                        </div>
+                        </div>
     <?php
         include 'common/footer.php';
     ?>

@@ -86,7 +86,7 @@ ul.social-network li i {
 
 ul.social-network li {
     display:inline;
-    margin: 0 5px;
+    margin: 0 25px;
     border: 0px solid #2D2D2D;
     padding: 5px 0 0;
     width: 32px;
@@ -120,7 +120,7 @@ ul.social-network {
     color: #fff;
 }
 a {
-  color: #0a0a0a;
+  color: #ffffff;
   text-decoration: none;
 }
 

@@ -10,6 +10,7 @@
                   <br>
                   <h4 class="footertext">Programador</h4>
                   <p class="footertext">Benito Alfredo Reyes<br>
+                  <p class="footertext">benitoalfredoreyes@gmail.com<br>
                 </center>
               </div>
               <div class="col-md-4">
@@ -25,12 +26,12 @@
                   <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
                   <br>
                   <h4 class="footertext">Diseñado para</h4>
-                  <p class="footertext">Revista Salud y Administración.<br>
+                  <p class="footertext"><a href="https://revista.unsis.edu.mx">Revista Salud y Administración.</a><br>
                 </center>
               </div>
             </div>
             <div class="row">
-            <p><center><a href="#">Contact Stuff Here</a> <p class="footertext">Copyright 2018</p></center></p>
+            <p><center><p class="footertext">Copyright 2018</p></center></p>
         </div>
     </div>
 </div>

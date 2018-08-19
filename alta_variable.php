@@ -5,7 +5,7 @@
 	git:	https://github.com/Alfredit0/
  */
  
-require 'parametros.php';
+require 'parametros_variables.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,8 +18,18 @@ require 'parametros.php';
 		include 'common/header.php';
 	?>
 	<div class="container-fluid">
-		<h2>Alta</h2>
-		<form action="insertar.php" method="post" class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-6">
+			<div class="col-md-3 col-lg-3">
+            	<h4><a href="variables.php" class="text-primary"><span class="glyphicon glyphicon-arrow-left"></span> Regresar</a></h4>
+			</div>
+			<div class="col-md-4 col-lg-4">
+				<h3>Alta de variable</h3>
+			</div>
+			<div class="col-md-4 col-lg-4">
+				<h4><a href="index.php" class="text-primary"><span class="glyphicon glyphicon-home"></span>Inicio</a></h4>
+			</div>						
+		</div>
+		<form action="insertar_variable.php" method="post" class="col-md-12 col-lg-12">
 			<?php
 			for ($i=0; $i < $num_campos; $i++) { 
 				echo '<div class="form-group col-md-6 col-lg-6">';
