@@ -17,9 +17,7 @@ include 'common/head.php';
         ?>
         <div class="container-fluid" style="font-size: 12px; margin-top: 1em;">
         <div class="header-w3l">
-            <h1>
-                Sistema de Envío de Correos	Electrónicos (SECE)		
-            </h1>
+            <!-- <h1></h1> -->
         </div>
         <!--//header-->
         <div class="main-content-agile">
@@ -30,7 +28,7 @@ include 'common/head.php';
             <div class="sub-main-w3">
                 <h2>Actividades</h2>
                 <div class="right-w3l"> 
-                    <input type="button" value="Añadir contactos" onclick="location.href = 'add.html';">                            
+                    <input type="button" value="Añadir contactos" onclick="location.href = 'alta.php';">                            
                 </div>                        
                 <div class="right-w3l">
                     <p id="statusEnvio" class="center-block"></p>
