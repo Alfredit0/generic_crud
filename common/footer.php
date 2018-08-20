@@ -1,4 +1,3 @@
-<link href="common/footer_style.css" rel="stylesheet">
 <div id="footer">
     <div class="container">
         <div class="row">

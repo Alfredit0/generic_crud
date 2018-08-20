@@ -12,6 +12,11 @@
 <?php
 include 'common/head.php';
 ?>
+<style>
+#footer{
+    position:relative;
+}
+</style>
 <body>    
         <?php
             include 'common/header.php';
@@ -57,9 +62,7 @@ include 'common/head.php';
                                 echo '<button type="submit" onclick="return confirmar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>';
                                 echo '</form>';
                                 echo '</td>';
-                            
-                                //echo '<td><button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></td>';
-                                //echo '<td><button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button></td>';
+
                                 echo "</tr>\n";
                                 $j++;
                             }
