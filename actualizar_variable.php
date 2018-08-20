@@ -24,7 +24,27 @@ require 'parametros_variables.php';
 	if(mysqli_query($link,$sql))
 			echo "¡Gracias! Hemos recibido sus cambios.\n";	
 		else
-			echo "Error. No se guardo el registro";
-
-	echo '<h2><a href="index.php">Ir a inicio</a></h2>';
+			echo "Error. No se guardo el registro";	
 ?>
+<!DOCTYPE html>
+<html>
+<?php
+include 'common/head.php';
+?>
+<body>    
+        <?php
+            include 'common/header.php';
+        ?>
+        <div class="container-fluid" style="font-size: 12px; margin-top: 1em;">
+			<div>
+				<h3 class="text-success text-center">
+					<span class="fa fa-check"></span>
+					<?php echo $mensajeExito; ?>
+				</h3>
+			</div>
+        </div>
+    <?php
+        include 'common/footer.php';
+    ?>
+    </body>
+</html>
