@@ -6,7 +6,7 @@
             <br>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                  <img src="images/w8lycl.png" class="img-circle" alt="the-brains">
                   <br>
                   <h4 class="footertext">Programador</h4>
                   <p class="footertext">Benito Alfredo Reyes<br>
@@ -15,7 +15,7 @@
               </div>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                  <img src="images/2z7enpc.png" class="img-circle" alt="...">
                   <br>
                   <h4 class="footertext">Versión del software</h4>
                   <p class="footertext">1.0<br>
@@ -23,7 +23,7 @@
               </div>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                  <img src="images/307n6ux.png" class="img-circle" alt="...">
                   <br>
                   <h4 class="footertext">Diseñado para</h4>
                   <p class="footertext"><a href="https://revista.unsis.edu.mx">Revista Salud y Administración.</a><br>
