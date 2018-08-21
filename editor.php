@@ -28,9 +28,9 @@
             type: 'post',
             url: 'guardar_plantilla.php',
             data: $('form').serialize(),
-            success: function () {
-              closeModal();
+            success: function () {              
               alert('Platilla Guardada Correctamente');
+              closeModal();
             }
           });
         });
@@ -38,11 +38,11 @@
     </script>   
     <script>
         function openModal() {
-            document.getElementById('modal').style.display = 'block';
+            document.getElementById('modalLoad').style.display = 'block';
             document.getElementById('fade').style.display = 'block';
         }
         function closeModal() {
-            document.getElementById('modal').style.display = 'none';
+            document.getElementById('modalLoad').style.display = 'none';
             document.getElementById('fade').style.display = 'none';
         }
     </script>
@@ -53,7 +53,7 @@
             top: 0%;
             left: 0%;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             background-color: #ababab;
             z-index: 1001;
             -moz-opacity: 0.8;
@@ -61,7 +61,7 @@
             filter: alpha(opacity=80);
         }
 
-        #modal {
+        #modalLoad {
             display: none;
             position: absolute;
             top: 45%;
@@ -85,13 +85,13 @@
     include 'common/header.php'
 ?>    
     <div id="fade"></div>
-    <div id="modal">
-        <img id="loader" src="images/loading.gif" />
+    <div id="modalLoad">
+        <img id="loader" src="images/cargando.gif" />
     </div>
     <div class="container-fluid">
         <h1>Editor de plantilla</h1>
         <form>
-            <textarea id="text_p" name="texto_plantilla" rows="30">
+            <textarea id="text_p" name="texto_plantilla" rows="25">
                 <?php echo $data;?>
             </textarea>
             <button type="submit">Guardar</button>
