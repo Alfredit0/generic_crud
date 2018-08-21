@@ -20,7 +20,7 @@ include 'common/head.php';
             <!-- <h1></h1> -->
         </div>
         <!--//header-->
-        <div class="main-content-agile">
+        <div>
             <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
             <!-- Style-CSS -->
             <link rel="stylesheet" href="css/font-awesome.css">

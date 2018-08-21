@@ -6,7 +6,6 @@
     background-size: 100%;
     background-position: 50% 50%;
   /* Set the fixed height of the footer here */
-  height: 275px;
   background: 
   /* color overlay */ 
     linear-gradient(
@@ -16,9 +15,8 @@
     /* image to overlay */
     url(../images/footer.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
-    position: fixed;
-    bottom: 0;
+    background-repeat: no-repeat;    
+    margin-top: 5em;   
 }
 
 

@@ -21,7 +21,7 @@ require 'parametros.php';
 		}		
 		$sql=$sql." WHERE ".$campos[0]." = '".$id."'";			
 	if(mysqli_query($link,$sql))
-			$mensajeExito= "¡Gracias! Hemos recibido sus cambios.\n";	
+			$mensajeExito = "¡Gracias! Hemos recibido sus cambios.\n";	
 		else
 			$mensajeError = "Error. No se guardo el registro";	
 ?>
