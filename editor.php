@@ -19,6 +19,21 @@
     selector: '#text_p'
   });
   </script>
+    <script>
+      $(function () {
+        $('form').on('submit', function (e) {
+          e.preventDefault();
+          $.ajax({
+            type: 'post',
+            url: 'guardar_plantilla.php',
+            data: $('form').serialize(),
+            success: function () {
+              alert('Platilla Guardada Correctamente');
+            }
+          });
+        });
+      });
+    </script>    
 </head>
 
 <body>
@@ -28,7 +43,7 @@
     <div class="container-fluid">
 
     <h1>Editor de plantilla</h1>
-    <form method="post" action="guardar_plantilla.php">
+    <form>
         <textarea id="text_p" name="texto_plantilla" rows="30"><?php echo $data;?></textarea>
         <button type="submit">Guardar</button>
     </form>
