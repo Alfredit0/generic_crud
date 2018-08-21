@@ -66,9 +66,9 @@
             position: absolute;
             top: 45%;
             left: 45%;
-            width: 110px;
-            height: 110px;
-            padding:2px 2px 0px;
+            width: 120px;
+            height: 120px;
+            padding:2px;
             border: 3px solid #ababab;
             box-shadow:1px 1px 10px #ababab;
             border-radius:20px;
