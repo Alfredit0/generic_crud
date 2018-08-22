@@ -20,7 +20,7 @@ include 'common/head.php';
             <!-- <h1></h1> -->
         </div>
         <!--//header-->
-        <div>
+        
             <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
             <!-- Style-CSS -->
             <link rel="stylesheet" href="css/font-awesome.css">
@@ -34,17 +34,18 @@ include 'common/head.php';
                     <p id="statusEnvio" class="center-block"></p>
                     <input type="button" value="Enviar correos">
                 </div>	
+                <div class="right-w3l">                    
+                    <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor.php'">
+                </div>	 
+                <div class="right-w3l">                    
+                    <input type="button" value="Editar plantilla Invitación a Directivo" onclick="location.href = 'editor.php'>
+                </div>	                               
                 <div class="right-w3l">   
                     <input type="button" value="Cargar contactos desde excel" onclick="location.href = 'subirexcel.jsp';">
                 </div>
                 <!--//main-->
-                <!--footer-->
-                <div class="footer">
-                    <p>&copy; 2018 Alfredo Reyes
-                    </p>
-                </div>
+            
             </div>
-        </div>
         </div>
     <?php
         include 'common/footer.php';

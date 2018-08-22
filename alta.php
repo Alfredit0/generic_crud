@@ -17,9 +17,27 @@ require 'parametros.php';
 	<?php
 		include 'common/header.php';
 	?>
+	<script>
+		$(function () {
+			$('form').on('submit', function (e) {
+				openModal();
+				e.preventDefault();
+				$.ajax({
+				type: 'post',
+				url: 'insertar.php',
+				data: $('form').serialize(),
+				success: function () {              
+					alert('Datos Guardados Correctamente');
+					$('form')[0].reset();
+					closeModal();
+				}
+				});
+			});
+		});
+	</script>
 	<div class="container-fluid">
 		<h2>Alta</h2>
-		<form action="insertar.php" method="post" class="col-md-12 col-lg-12">
+		<form class="col-md-12 col-lg-12">
 			<?php
 			for ($i=0; $i < $num_campos; $i++) { 
 				echo '<div class="form-group col-md-6 col-lg-6">';

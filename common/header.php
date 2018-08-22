@@ -17,4 +17,12 @@
         </div>
       </div>
   </header>
+  <div id="fade"></div>
+  <div id="modalLoad">
+        <img id="loader" src="images/cargando.gif" />
+  </div>
+  <div id="myalert" class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <p id="info">Indicates a dangerous or potentially negative action.<p>
+  </div>
 </div>    

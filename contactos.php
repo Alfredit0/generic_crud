@@ -21,6 +21,26 @@ include 'common/head.php';
         <?php
             include 'common/header.php';
         ?>
+	<script>
+		function eliminarContacto(id) {
+				openModal();				
+				$.ajax({
+				type: 'post',
+				url: 'eliminar.php',
+				data: 'id='+id,
+				success: function (response) { 					  
+					var r = JSON.parse(response);					
+					if(r.status=="success"){
+						alert('Datos Guardados Correctamente');
+					}else{
+						alert('Ha ocurrido un error. Verifique los datos. O intente nuevamente');
+					}          								
+					closeModal();
+				}
+				});
+			}
+	</script>
+        
         <div class="container-fluid" style="font-size: 12px; margin-top: 1em;">
         <div class="row">		        
             <div class="col-md-12">
@@ -50,20 +70,16 @@ include 'common/head.php';
                                 for ($i=0; $i < $num_campos; $i++) { 
                                     echo '<td>'.$row [$campos[$i]].'</td>';
                                 }
-
                                 echo '<td><form name="form'.$j.'" method="post" action="editar.php" >';
                                 echo '<input type="hidden" name="id" value="'.$row [$campos[0]].'" />';
                                 echo '<button type="submit" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>';
                                 echo '</form>';
                                 echo '</td>';
                     
-                                echo '<td><form name="form'.$j.'" method="post" action="eliminar.php">';
-                                echo '<input type="hidden" name="id" value="'.$row [$campos[0]].'" />';                                
-                                echo '<button type="submit" onclick="return confirmar()" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>';
-                                echo '</form>';
+                                echo '<td>';                                
+                                echo '<button onclick="confirmar(\''.$row [$campos[0]].'\')" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>';                            
                                 echo '</td>';
-
-                                echo "</tr>\n";
+                                echo "</tr>";
                                 $j++;
                             }
                         ?>
@@ -79,17 +95,20 @@ include 'common/head.php';
     ?>
 
 		            <script type="text/javascript">
-                    function confirmar() {
-                    //Ingresamos un mensaje a mostrar
-                    var mensaje = confirm("¿Está seguro que desea eliminar el registro?");
-                    //Detectamos si el usuario acepto el mensaje
-                    if (mensaje) {
-                    alert("El registro será eliminado");
-                    }
-                    //Detectamos si el usuario denegó el mensaje
-                    else {
-                    alert("¡Haz cancelado la eliminación");
-                  return false;                    }
+                    function confirmar(id) {
+                        console.log(id)
+                        //Ingresamos un mensaje a mostrar
+                        var mensaje = confirm("¿Está seguro que desea eliminar el registro?");
+                        //Detectamos si el usuario acepto el mensaje
+                        if (mensaje) {
+                        alert("El registro será eliminado");
+                        eliminarContacto(id);
+                        }
+                        //Detectamos si el usuario denegó el mensaje
+                        else {
+                            alert("¡Haz cancelado la eliminación");
+                            return false;
+                        }
                     }
                     </script>    
     </body>

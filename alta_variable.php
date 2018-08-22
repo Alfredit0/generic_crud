@@ -17,19 +17,27 @@ require 'parametros_variables.php';
 	<?php
 		include 'common/header.php';
 	?>
+	<script>
+		$(function () {
+			$('form').on('submit', function (e) {
+				openModal();
+				e.preventDefault();
+				$.ajax({
+				type: 'post',
+				url: 'insertar_variable.php',
+				data: $('form').serialize(),
+				success: function () {              					
+					alert('Datos Guardados Correctamente');
+					$('form')[0].reset();
+					closeModal();
+				}
+				});
+			});
+		});
+	</script>
 	<div class="container-fluid">
-		<div class="col-md-6 col-lg-6">
-			<div class="col-md-3 col-lg-3">
-            	<h4><a href="variables.php" class="text-primary"><span class="glyphicon glyphicon-arrow-left"></span> Regresar</a></h4>
-			</div>
-			<div class="col-md-4 col-lg-4">
-				<h3>Alta de variable</h3>
-			</div>
-			<div class="col-md-4 col-lg-4">
-				<h4><a href="index.php" class="text-primary"><span class="glyphicon glyphicon-home"></span>Inicio</a></h4>
-			</div>						
-		</div>
-		<form action="insertar_variable.php" method="post" class="col-md-12 col-lg-12">
+		<h3>Alta de variable</h3>							
+		<form class="col-md-6 col-lg-6">
 			<?php
 			for ($i=0; $i < $num_campos; $i++) { 
 				echo '<div class="form-group col-md-6 col-lg-6">';
@@ -38,7 +46,7 @@ require 'parametros_variables.php';
 				echo "</div>";
 			}
 			?>
-			<button type="submit" class="btn btn-success pull-right" ><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
+			<button type="submit" class="btn btn-primary pull-right" ><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
 		</form>	
 		</div>
 	<?php

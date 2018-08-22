@@ -12,8 +12,11 @@
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
     <link href="common/footer_style.css" rel="stylesheet">
+    <link href="css/style_loading.css" rel="stylesheet">
+    <script src="js/loading.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            openModal();
             $('#example').DataTable( {
                 responsive: {
                     details: {
@@ -23,6 +26,7 @@
                     }
                 }
             } );
+            closeModal();
         } );
     </script>    
 </head>

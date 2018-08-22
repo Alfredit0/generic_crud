@@ -18,6 +18,28 @@ include 'common/head.php';
 	<?php
         include 'common/header.php';
 	?>
+	<script>
+		$(function () {
+			$('form').on('submit', function (e) {
+				openModal();
+				e.preventDefault();
+				$.ajax({
+				type: 'post',
+				url: 'actualizar.php',
+				data: $('form').serialize(),
+				success: function (response) { 					  
+					var r = JSON.parse(response);					
+					if(r.status=="success"){
+						showSuccessAlert(r.message);
+					}else{
+						showErrorAlert(r.message);
+					}          								
+					closeModal();
+				}
+				});
+			});
+		});
+	</script>	
 	<div class="container-fluid">
 		<div>
 			<h3>Actualizar</h3>

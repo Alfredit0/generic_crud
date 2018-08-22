@@ -8,13 +8,19 @@
 $id=$_POST['id'];
 require 'parametros_variables.php';
 
-		  $query = "DELETE "."FROM ".$tabla." where ".$campos[0]." = '".$id."'";
+	$query = "DELETE "."FROM ".$tabla." where ".$campos[0]." = '".$id."'";
 		  
-		  if(mysqli_query($link, $query)){
-			echo "El Registro se elimino correctamente";
-		}else{
-			echo "No se pudo eliminar el registro";
-		}
-
-	echo '<h2><a href="index.php">Ir a inicio</a></h2>';
+	if(mysqli_query($link,$sql)){
+		$status = "success";
+		$message = "El registro se ha guardado correctamente";				
+	}	
+	else{
+		$status = "error";	
+		$message = "Ha ocurrido un error. Verifique los datos e intente nuevamente.";
+	}
+	echo json_encode(
+		array(
+			'status' => $status,
+			'message' => $message
+		));	
 ?>
