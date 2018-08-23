@@ -31,9 +31,9 @@ include 'common/head.php';
 				success: function (response) { 					  
 					var r = JSON.parse(response);					
 					if(r.status=="success"){
-						alert('Datos Guardados Correctamente');
+						showSuccessAlert(r.message);
 					}else{
-						alert('Ha ocurrido un error. Verifique los datos. O intente nuevamente');
+						showErrorAlert(r.message);
 					}          								
 					closeModal();
 				}

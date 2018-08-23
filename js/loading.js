@@ -19,3 +19,9 @@ function showErrorAlert(info) {
     document.getElementById('myalert').style.backgroundColor = '#f44336';
     document.getElementById('info').innerText = info;
 }
+
+function showInfoAlert(info) {
+    document.getElementById('myalert').style.display = 'block';    
+    document.getElementById('myalert').style.backgroundColor = '#5c84e6';
+    document.getElementById('info').innerText = info;
+}

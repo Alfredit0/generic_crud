@@ -15,6 +15,27 @@ include 'common/head.php';
         <?php
             include 'common/header.php';
         ?>
+
+        <script>
+            function iniciarEnvios() {
+                    openModal();	
+                    showSuccessAlert('Ha comenzado el envio de correos');
+                    $.ajax({
+                    type: 'post',
+                    url: 'http://localhost:8080/MailApp/SendMails',                                        
+                    success: function (response) { 					  
+                        var r = JSON.parse(response);					
+                        if(r.status=="success"){
+                            showSuccessAlert(r.message);
+                        }else{
+                            showErrorAlert(r.message);
+                        }          								
+                        closeModal();
+                    }
+                    });
+                }
+        </script>
+
         <div class="container-fluid" style="font-size: 12px; margin-top: 1em;">
         <div class="header-w3l">
             <!-- <h1></h1> -->
@@ -30,9 +51,8 @@ include 'common/head.php';
                 <div class="right-w3l"> 
                     <input type="button" value="Añadir contactos" onclick="location.href = 'alta.php';">                            
                 </div>                        
-                <div class="right-w3l">
-                    <p id="statusEnvio" class="center-block"></p>
-                    <input type="button" value="Enviar correos">
+                <div class="right-w3l">                    
+                    <input type="button" value="Enviar correos" onclick="iniciarEnvios()">
                 </div>	
                 <div class="right-w3l">                    
                     <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor.php'">
