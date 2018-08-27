@@ -58,7 +58,7 @@ include 'common/head.php';
                     <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor.php'">
                 </div>	 
                 <div class="right-w3l">                    
-                    <input type="button" value="Editar plantilla Invitación a Directivo" onclick="location.href = 'editor.php'>
+                    <input type="button" value="Editar plantilla Invitación a Directivo" onclick="location.href = 'editor.php'">
                 </div>	                               
                 <div class="right-w3l">   
                     <input type="button" value="Cargar contactos desde excel" onclick="location.href = 'subirexcel.jsp';">
