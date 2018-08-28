@@ -11,7 +11,7 @@
 <?php
 include 'common/head.php';
 ?>
-<body>    
+<body style="background-color: #d2d2d263;">    
         <?php
             include 'common/header.php';
         ?>
