@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="es_mx">
 
 <head>
-	<title>Particles Login Form Form Responsive Widget Template :: w3layouts</title>
+	<title>Acceso</title>
 	<!-- Meta-Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -61,13 +61,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<div id="myalert" class="alert">
 		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-		<p id="info">Indicates a dangerous or potentially negative action.<p>
+		<p id="info"><p>
 	</div>
 	<!--  particles  -->
 	<div id="particles-js"></div>
 	<!-- //particles -->
 	<div class="w3ls-pos">
-		<h1>Acceso - Sistema de Envío de Correos</h1>
+		<h1>Sistema de Envío de Correos (SECE)</h1>
 		<div class="w3ls-login box">
 			<!-- form starts here -->
 			<form metod="post">
