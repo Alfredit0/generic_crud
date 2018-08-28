@@ -46,6 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					var r = JSON.parse(response);					
 					if(r.status=="success"){
 						showSuccessAlert(r.message);
+						location.replace('../index.php')
 					}else{
 						showErrorAlert(r.message);
 					}          								
