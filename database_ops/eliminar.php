@@ -6,7 +6,7 @@
  */
  
 $id=$_POST['id'];
-require 'parametros.php';
+require '../database_config/parametros.php';
 $sql = "DELETE "."FROM ".$tabla." where ".$campos[0]." = '".$id."'";
 if(mysqli_query($link,$sql)){
 	$status = "success";

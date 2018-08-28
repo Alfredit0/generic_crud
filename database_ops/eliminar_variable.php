@@ -6,7 +6,7 @@
  */
  
 $id=$_POST['id'];
-require 'parametros_variables.php';
+require '../database_config/parametros_variables.php';
 
 	$query = "DELETE "."FROM ".$tabla." where ".$campos[0]." = '".$id."'";
 		  

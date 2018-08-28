@@ -4,7 +4,7 @@
 	date:   06/12/2016
 	git:	https://github.com/Alfredit0/
  */
-		require 'parametros.php';
+		require '../database_config/parametros.php';
 		//Conexión a la BD		
 
 		$sql = "INSERT INTO ".$tabla." (";

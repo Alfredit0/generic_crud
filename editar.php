@@ -6,7 +6,7 @@
  */
  
 $id=$_POST['id'];
-require 'parametros.php';
+require 'database_config/parametros.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ include 'common/head.php';
 				e.preventDefault();
 				$.ajax({
 				type: 'post',
-				url: 'actualizar.php',
+				url: 'database_ops/actualizar.php',
 				data: $('form').serialize(),
 				success: function (response) { 					  
 					var r = JSON.parse(response);					

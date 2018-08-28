@@ -4,7 +4,7 @@
 	date:   06/12/2016
 	git:	https://github.com/Alfredit0/
  */
- require 'parametros.php';
+ require 'database_config/parametros.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ include 'common/head.php';
 				openModal();				
 				$.ajax({
 				type: 'post',
-				url: 'eliminar.php',
+				url: 'database_ops/eliminar.php',
 				data: 'id='+id,
 				success: function (response) { 					  
 					var r = JSON.parse(response);					

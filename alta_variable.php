@@ -5,7 +5,7 @@
 	git:	https://github.com/Alfredit0/
  */
  
-require 'parametros_variables.php';
+require 'database_config/parametros_variables.php';
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ require 'parametros_variables.php';
 				e.preventDefault();
 				$.ajax({
 				type: 'post',
-				url: 'insertar_variable.php',
+				url: 'database_ops/insertar_variable.php',
 				data: $('form').serialize(),
 				success: function () {              					
 					alert('Datos Guardados Correctamente');

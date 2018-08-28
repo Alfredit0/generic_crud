@@ -15,7 +15,6 @@ include 'common/head.php';
         <?php
             include 'common/header.php';
         ?>
-
         <script>
             function iniciarEnvios() {
                     openModal();	
@@ -35,7 +34,6 @@ include 'common/head.php';
                     });
                 }
         </script>
-
         <div class="container-fluid" style="font-size: 12px; margin-top: 1em;">
         <div class="header-w3l">
             <!-- <h1></h1> -->

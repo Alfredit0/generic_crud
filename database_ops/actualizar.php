@@ -4,7 +4,7 @@
 	date:   06/12/2016
 	git:	https://github.com/Alfredit0/
  */
-require 'parametros_variables.php';	
+require '../database_config/parametros.php';	
 
 		$sql = "UPDATE ".$tabla." SET ";
 
@@ -19,8 +19,7 @@ require 'parametros_variables.php';
 				}
 				$i++;
 		}		
-		$sql=$sql." WHERE ".$campos[0]." = '".$id."'";				
-
+		$sql=$sql." WHERE ".$campos[0]." = '".$id."'";			
 	if(mysqli_query($link,$sql)){
 			$status = "success";
 			$message = "El registro se ha guardado correctamente";				
@@ -33,5 +32,5 @@ require 'parametros_variables.php';
 		array(
 			'status' => $status,
 			'message' => $message
-		));		
+		));				
 ?>
