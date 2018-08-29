@@ -335,14 +335,15 @@ label.check {
     -webkit-flex-basis: 100%;
 }
 
-.w3ls-login input[type=submit] {
+.w3ls-login input[type=submit] , .w3ls-login input[type=button] {
     color: #000000;
+    text-transform: capitalize;
     font-weight: 100;
     width: 100%;
     padding: 0.4em 0;
     font-size: 1em;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -353,9 +354,10 @@ label.check {
     -moz-transition: 0.5s all ease;
     -o-transition: 0.5s all ease;
     -ms-transition: 0.5s all ease;
+    margin-bottom: 1.5em;
 }
 
-.w3ls-login input[type=submit]:hover {
+.w3ls-login input[type=submit]:hover, .w3ls-login input[type=button]:hover {
     color: #fff;
     box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
     transform: translateY(5px);

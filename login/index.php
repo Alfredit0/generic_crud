@@ -69,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //particles -->
 	<div class="w3ls-pos">
 		<h1>Sistema de Envío de Correos (SECE)</h1>
-		<div class="w3ls-login box">
+		<div class="w3ls-login" style="float:none; margin:auto;">
 			<!-- form starts here -->
 			<form metod="post">
 				<div class="agile-field-txt">

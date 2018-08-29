@@ -32,4 +32,4 @@ session_start();
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
       <p id="info">Indicates a dangerous or potentially negative action.<p>
   </div>
-</div>    
+</div>
