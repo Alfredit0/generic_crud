@@ -33,6 +33,7 @@ include 'common/head.php';
                     });
                 }
         </script>
+
         <div class="container-fluid" style="margin-top: 1em;">        
             <link rel="stylesheet" href="login/css/style.css" type="text/css" media="all" />                        
             <div class="col-md-6 col-lg-6" style="float:none; margin:auto;">
@@ -42,6 +43,8 @@ include 'common/head.php';
                             <input type="button" value="Añadir contactos" onclick="location.href = 'alta.php';" >                            
                             
                             <input type="button" value="Enviar correos" onclick="iniciarEnvios()" >
+
+                            <input title="Se ponen todos los correos con estatus de NO_ENVIADO" type="button" value="Habilitar todos los correos" onclick="enbaleAll()" >
 
                             <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor.php'">
 
