@@ -44,7 +44,7 @@ include 'common/head.php';
                             
                             <input type="button" value="Enviar correos" onclick="iniciarEnvios()" >
 
-                            <input title="Se ponen todos los correos con estatus de NO_ENVIADO" type="button" value="Habilitar todos los correos" onclick="enbaleAll()" >
+                            <input title="Permite reestablecer el estatus a NO_ENVIADO" type="button" value="Habilitar correos" onclick="location.href = 'habilitar.php'">
 
                             <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor.php'">
 
