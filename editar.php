@@ -51,7 +51,7 @@ include 'common/head.php';
 			if($row = mysqli_fetch_array($result)){
 				$i=0;
 				echo '<div class="form-group col-md-6 col-lg-6">';
-				echo '<label>'.$nombCampos[$i].'</label><input name="parametro'.$i.'" placeholder="'.$nombCampos[$i].'" value="'.$row [$campos[$i]].'" required="" readonly="readonly" class="form-control">';
+				echo '<label>'.$nombCampos[$i].'</label><input name="parametro'.$i.'" placeholder="'.$nombCampos[$i].'" value="'.$row [$campos[$i]].'" required=""  class="form-control">';
 				echo "</div>";
 				for ($i=$i+1; $i < $num_campos; $i++) { 
 					echo '<div class="form-group col-md-6 col-lg-6">';
@@ -59,6 +59,7 @@ include 'common/head.php';
 					echo '<input name="parametro'.$i.'" placeholder="'.$nombCampos[$i].'" value="'.$row [$campos[$i]].'" required="" class="form-control">';
 					echo "</div>";
 				}
+				echo '<input name="parametro'.$i.'" value="'.$row [$campos[0]].'" type="hidden">';
 				echo '<button type="submit" class="btn btn-primary pull-right">Guardar cambios</button>';
 			}else{
 				echo "No se pudo obtener el registro";
