@@ -1,5 +1,5 @@
 <?php
-    $my_file = '/opt/mail_files/invitacion_jefe.html';    
+    $my_file = '/opt/mail_files/invitacion_individual.html';    
     $handle = fopen($my_file, 'r');
     $data = '';
     if(filesize($my_file) > 0)

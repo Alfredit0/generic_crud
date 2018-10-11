@@ -46,7 +46,7 @@ include 'common/head.php';
 
                             <input title="Permite reestablecer el estatus a NO_ENVIADO" type="button" value="Habilitar correos" onclick="location.href = 'habilitar.php'">
 
-                            <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor.php'">
+                            <input type="button" value="Editar plantilla Invitación individual" onclick="location.href = 'editor2.php'">
 
                             <input type="button" value="Editar plantilla Invitación a Directivo" onclick="location.href = 'editor.php'">
             

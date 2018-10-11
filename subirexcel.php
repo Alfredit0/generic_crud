@@ -9,7 +9,6 @@
 	<title>Subir contactos</title>
 	<link rel="canonical" href="index.html">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400" />
 	<style>
