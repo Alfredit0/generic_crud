@@ -26,7 +26,7 @@
             e.preventDefault();
             $.ajax({
             type: 'post',
-            url: 'guardar_plantilla.php',
+            url: 'guardar_plantilla2.php',
             data: $('form').serialize(),
             success: function (response) { 					  
 					var r = JSON.parse(response);					
