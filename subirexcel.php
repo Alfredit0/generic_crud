@@ -253,7 +253,7 @@
 
 <div class="container" role="main">
 
-	<form method="post" action="http://localhost:8080/MailApp/UploadExcel" enctype="multipart/form-data" novalidate class="box">
+	<form method="post" action="https://revista.unsis.edu.mx:8080/UploadExcel" enctype="multipart/form-data" novalidate class="box">
 
 		
 		<div class="box__input">
