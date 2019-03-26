@@ -8,7 +8,7 @@ $campos=array("email",  "nombre",  "pais", "institucion","facultad","cargo","sex
 $nombCampos=array("Email", "Nombre", "Pais", "Institución", "Facultad", "Cargo", "Sexo",   "NE", "Estatus", "Fecha Registro/Envío");
 $num_campos=count($campos);
 $tabla="contactos1";
-$link = mysqli_connect('revista.unsis.edu.mx', 'adminrev', 'mysql2018','promocion_db')
+$link = mysqli_connect('ip_server', 'user', 'pass','db')
         or die('No se pudo conectar: ' . mysql_error());
 
 if (!$link->set_charset("utf8")) {
